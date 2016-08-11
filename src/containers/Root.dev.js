@@ -1,23 +1,25 @@
-import React, { Component, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
+
 import routes from '../routes';
 import DevTools from './DevTools';
 
-export default class Root extends Component {
-  static propTypes = {
-    store: PropTypes.object.isRequired
-  };
+const Root = (props) => {
+  const { store } = props;
 
-  render() {
-    const { store } = this.props;
-    return (
-      <Provider store={store}>
-        <div>
-          <Router history={browserHistory} routes={routes} />
-          <DevTools />
-        </div>
-      </Provider>
-    );
-  }
-}
+  return (
+    <Provider store={store}>
+      <div>
+        <Router history={browserHistory} routes={routes} />
+        <DevTools />
+      </div>
+    </Provider>
+  );
+};
+
+Root.propTypes = {
+  store: PropTypes.object.isRequired,
+};
+
+export default Root;

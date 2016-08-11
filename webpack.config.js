@@ -18,7 +18,7 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.js$/, loaders: [ 'react-hot', 'babel' ], exclude: /node_modules/, include: __dirname + '/src/' },
+      { test: /\.js$/, loaders: [ 'react-hot', 'babel', 'eslint-loader' ], exclude: /node_modules/, include: path.join(__dirname, 'src') },
       { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url-loader?limit=10240', exclude: /node_modules/ }
     ]
   },
@@ -27,12 +27,6 @@ module.exports = {
     hot: true,
     noInfo: false,
     contentBase: './src',
-    // proxy: {
-    //   '/api/*': {
-    //     target: 'http://localhost:9000',
-    //     secure: false
-    //   }
-    // },
     watchOptions: {
       ignored: /node_modules/,
       aggregateTimeout: 300,
