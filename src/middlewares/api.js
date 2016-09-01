@@ -1,6 +1,6 @@
 import 'isomorphic-fetch';
 
-const API_ROOT = '/api/';
+import { API_ROOT } from '../constants';
 
 // Fetches an API response.
 function callApi(endpoint) {

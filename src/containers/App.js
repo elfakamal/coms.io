@@ -1,26 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
-import { connectUser, sayHello } from '../actions';
+import Conversation from '../components/Conversation';
 
 @connect(
-  state => ({
-    coms: state.coms,
-  }),
-  {
-    connectUser, sayHello,
-  }
+  ({ users, conversations }) => ({ users, conversations })
 )
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.node,
     connectUser: PropTypes.func,
-    sayHello: PropTypes.func,
-    coms: PropTypes.object.isRequired,
-  };
-
-  static defaultProps = {
-    coms: {},
   };
 
   constructor(props) {
@@ -28,19 +17,16 @@ export default class App extends Component {
 
     this.state = {
       connectedUser: {},
+      conversations: [],
     };
-  }
-
-  componentDidMount() {
-    this.props.sayHello();
   }
 
   render() {
     return (
-      <div>
-        <header>welcome to my brilliant app coms.io</header>
-        <p>{this.props.coms.message}</p>
-      </div>
+      <section>
+        Coms.io
+        {this.state.conversations.map(conversation => <Conversation {...{ conversation }} />)}
+      </section>
     );
   }
 }

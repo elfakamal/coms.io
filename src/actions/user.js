@@ -14,7 +14,3 @@ export const connectUser = (user) => ({
     endpoint: `connect-user/${user.username}`,
   },
 });
-
-export const sayHello = () => ({
-  type: 'SAY_HELLO',
-});
