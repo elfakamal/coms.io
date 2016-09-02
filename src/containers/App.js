@@ -3,9 +3,7 @@ import { connect } from 'react-redux';
 
 import Conversation from '../components/Conversation';
 
-@connect(
-  ({ users, conversations }) => ({ users, conversations })
-)
+@connect(({ users, conversations }) => ({ users, conversations }))
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.node,
@@ -21,11 +19,18 @@ export default class App extends Component {
     };
   }
 
+  loadConversations() {
+
+  }
+
   render() {
     return (
       <section>
-        Coms.io
-        {this.state.conversations.map(conversation => <Conversation {...{ conversation }} />)}
+        <div>Coms.io</div>
+        <button onClick={this.loadConversations}>load</button>
+        <div>
+          {this.state.conversations.map(conversation => <Conversation {...{ conversation }} />)}
+        </div>
       </section>
     );
   }

@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 
 import routes from '../routes';
-import DevTools from './DevTools';
+// import DevTools from './DevTools';
 
 const Root = (props) => {
   const { store } = props;
@@ -12,7 +12,7 @@ const Root = (props) => {
     <Provider store={store}>
       <div>
         <Router history={browserHistory} routes={routes} />
-        <DevTools />
+        {/* <DevTools /> */}
       </div>
     </Provider>
   );

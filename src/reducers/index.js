@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 
-import coms from './coms';
+import conversations from './conversations';
+import users from './users';
 
-const rootReducer = combineReducers({ coms });
+const rootReducer = combineReducers({ conversations, users });
 export default rootReducer;
