@@ -7,7 +7,7 @@ import createSagaMiddleware from 'redux-saga';
 import DevTools from '../containers/DevTools';
 import rootReducer from '../reducers';
 
-import loadConversations from '../sagas/conversations';
+import rootSaga from '../sagas';
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -24,7 +24,7 @@ export default function configureStore(initialState) {
     )
   );
 
-  sagaMiddleware.run(loadConversations);
+  sagaMiddleware.run(rootSaga);
 
   if (module.hot) {
     // Enable Webpack hot module replacement for reducers

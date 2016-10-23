@@ -1,9 +1,9 @@
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
-export default class Conversation extends React.Component {
+export default class ConversationItem extends React.Component {
   static propTypes = {
-    children: PropTypes.node,
-    conversation: PropTypes.string.isRequired,
+    conversation: PropTypes.object.isRequired,
   };
 
   constructor(props) {
@@ -15,10 +15,11 @@ export default class Conversation extends React.Component {
   }
 
   render() {
+    const { uuid, title } = this.props.conversation;
+
     return (
       <section className="coms-conversation">
-        <div>{this.props.conversation.title}</div>
-        {this.props.children}
+        <div><Link to={`#/conversations/${uuid}`}>{title}</Link></div>
       </section>
     );
   }

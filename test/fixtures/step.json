@@ -1,0 +1,98 @@
+{
+  "uuid": "58b40a87-f9f3-4c3e-bcde-c1f09938f134",
+  "stepId": "121868041",
+  "title": "Very Good Trip",
+  "start": 1465769100,
+  "end": 1465772460,
+  "fatherStepId": null,
+  "stationId": 1,
+  "embedId": "23557.2016-06-13",
+  "embedType": "expression",
+  "depth": 1,
+  "embed": {
+    "uuid": "4d984e08-082c-4df9-996d-aadcbca381f2",
+    "magnetothequeId": "2016F23557S0164",
+    "businessReference": "23557",
+    "stationId": 1,
+    "title": "Very Good Trip",
+    "start": 1465769100,
+    "end": 1465772460,
+    "body": null,
+    "diffusionId": "23557.2016-06-13",
+    "exploitationDays": 0,
+    "items": null,
+    "manifestations": [
+      {
+        "uuid": "5d52da89-8732-48e0-acd8-8fb019fb1465",
+        "title": "Neil Young : le vieil homme en colère ",
+        "type": "complet",
+        "audioPreset": "128 Kbits, joint stereo",
+        "url": "http://media.radiofrance-podcast.net/podcast09/14322-12.06.2016-ITEMA_21008120-0.mp3",
+        "date": 1465740300,
+        "magnetothequeId": "2016F23557S0164",
+        "stationId": 1,
+        "parentType": "expression",
+        "parentId": "ec20fb3b-4c5f-4e7e-bec5-64fa78bc3610",
+        "duration": 3204,
+        "principal": true,
+        "media": "mp3",
+        "stream_info": null,
+        "expirationDate": 0,
+        "isDeleted": false,
+        "objectId": null
+      }
+    ],
+    "concept": {
+      "uuid": "09814ab2-66ea-4e7a-abc4-93441c84895b",
+      "businessReference": "23557",
+      "title": "Very Good Trip",
+      "body": "Producteur : Michka Assayas",
+      "duration": 3360,
+      "stationId": 1,
+      "podcastId": 14322,
+      "is_podcast_manually_checked": false,
+      "isIgnored": false,
+      "exploitationDays": 0,
+      "podcast": {
+        "uuid": "5ab22cdb-8d17-4b6b-a459-117f91db6f10",
+        "id": 14322,
+        "title": "Very good trip",
+        "description": "Very good trip",
+        "imageUrl": "http://media.radiofrance-podcast.net/podcast09/RF_OMM_0000010621_ITE.jpg",
+        "link": "http://www.franceinter.fr/emission-very-good-trip",
+        "lastBuildDate": 1465746296,
+        "firstBroadcastDate": null,
+        "lastBroadcastDate": null,
+        "nbKeepingItem": null,
+        "nbKeepingDay": null,
+        "lastUpdate": null,
+        "valid": true,
+        "stationId": 1,
+        "collectionViewUrl": "https://itunes.apple.com/fr/podcast/very-good-trip/id1027309055?mt=2&uo=4",
+        "rssUrl": "http://radiofrance-podcast.net/podcast09/rss_14322.xml",
+        "published": true
+      },
+      "_embedded": {
+        "uuid": "09814ab2-66ea-4e7a-abc4-93441c84895b",
+        "station_id": [
+          "1"
+        ],
+        "external_id": "23557",
+        "type": "concept",
+        "manual_up_date": 1464989916,
+        "published_date": 1464989916,
+        "updated_date": 1464989914,
+        "path": "emissions/very-good-trip",
+        "title": "Very Good Trip",
+        "body": "Producteur : Michka Assayas",
+        "extra": {
+          "phone": null,
+          "theme": null,
+          "date_diff_textual": null
+        },
+        "is_listed": true,
+        "_embedded": {}
+      }
+    }
+  }
+}

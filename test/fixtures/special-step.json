@@ -1,0 +1,118 @@
+{
+  "uuid": "b28f6ea6-ad40-493a-ac78-04b23d05a0ab",
+  "stepId": "121868151",
+  "title": "Le 5/7",
+  "start": 1465786800,
+  "end": 1465794000,
+  "fatherStepId": null,
+  "stationId": 1,
+  "embedId": "21397.2016-06-13",
+  "embedType": "expression",
+  "depth": 1,
+  "embed": {
+    "uuid": "a9513178-0192-437a-b3cd-1d015e53067e",
+    "magnetothequeId": "2016F21397S0165",
+    "businessReference": "21397",
+    "stationId": 1,
+    "title": "Le 5/7",
+    "start": 1465786800,
+    "end": 1465794000,
+    "body": null,
+    "diffusionId": "21397.2016-06-13",
+    "exploitationDays": 0,
+    "items": [
+      {
+        "uuid": "4850ad04-3ae4-445d-be36-247da077d864",
+        "title": "Le 5/7 du 13 juin",
+        "link": "http://www.franceinter.fr/emissions/le-5-7/le-5-7-13-juin-2016",
+        "description": "durée : 01:55:09 - LE CINQ SEPT - Un 5/7 en deuil, comme l'est l’Amérique, et plus particulièrement l’Amérique arc-en-ciel.",
+        "duration": 6774,
+        "guid": "http://media.radiofrance-podcast.net/podcast09/13100-13.06.2016-ITEMA_21008498-0.mp3",
+        "pubDate": 1465786800,
+        "mp3Url": "http://rf.proxycast.org/1174458758839934976/13100-13.06.2016-ITEMA_21008498-0.mp3",
+        "keywords": "Le,5/7,du,13,juin",
+        "author": "Radio France",
+        "itunesSubtitle": "Émission du 13.06.2016",
+        "insertDate": 1465799061,
+        "businessReference": "21397",
+        "podcastId": 13100,
+        "magnetothequeId": "2016F21397S0165",
+        "stationId": 1,
+        "diffusionId": "21397.2016-06-13"
+      }
+    ],
+    "manifestations": [
+      {
+        "uuid": "b90a59a5-cf7d-4345-8907-374444052ba1",
+        "title": "Le 5/7 du 13 juin",
+        "type": "complet",
+        "audioPreset": "128 Kbits, joint stereo",
+        "url": "http://media.radiofrance-podcast.net/podcast09/13100-13.06.2016-ITEMA_21008498-0.mp3",
+        "date": 1465786800,
+        "magnetothequeId": "2016F21397S0165",
+        "stationId": 1,
+        "parentType": "expression",
+        "parentId": "a9513178-0192-437a-b3cd-1d015e53067e",
+        "duration": 6774,
+        "principal": true,
+        "media": "mp3",
+        "stream_info": null,
+        "expirationDate": 0,
+        "isDeleted": false,
+        "objectId": null
+      }
+    ],
+    "concept": {
+      "uuid": "dc595c32-0aa3-42f4-bfb9-3b195bcdbd0c",
+      "businessReference": "21397",
+      "title": "Le 5/7",
+      "body": "Producteur : Eric Delvaux",
+      "duration": 7200,
+      "stationId": 1,
+      "podcastId": 13100,
+      "is_podcast_manually_checked": true,
+      "isIgnored": false,
+      "exploitationDays": 0,
+      "podcast": {
+        "uuid": "bc84a6fb-abeb-4e0a-bfc7-e036264339e7",
+        "id": 13100,
+        "title": "LE CINQ SEPT",
+        "description": "LE CINQ SEPT",
+        "imageUrl": "http://media.radiofrance-podcast.net/podcast09/RF_OMM_0000008074_ITE.jpg",
+        "link": "http://www.radiofrance.fr/",
+        "lastBuildDate": 1465970698,
+        "firstBroadcastDate": null,
+        "lastBroadcastDate": null,
+        "nbKeepingItem": null,
+        "nbKeepingDay": null,
+        "lastUpdate": null,
+        "valid": true,
+        "stationId": 1,
+        "collectionViewUrl": "https://itunes.apple.com/fr/podcast/le-cinq-sept/id694235298?mt=2&uo=4",
+        "rssUrl": "http://radiofrance-podcast.net/podcast09/rss_13100.xml",
+        "published": true
+      },
+      "_embedded": {
+        "uuid": "dc595c32-0aa3-42f4-bfb9-3b195bcdbd0c",
+        "station_id": [
+          "1"
+        ],
+        "external_id": "21397",
+        "type": "concept",
+        "manual_up_date": 1464989957,
+        "published_date": 1464989957,
+        "updated_date": 1464989954,
+        "path": "emissions/le-5-7",
+        "title": "Le 5/7",
+        "body": "Producteur : Eric Delvaux",
+        "extra": {
+          "phone": null,
+          "theme": null,
+          "date_diff_textual": null
+        },
+        "is_listed": true,
+        "_embedded": {}
+      }
+    }
+  }
+}
