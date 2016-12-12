@@ -1,0 +1,44 @@
+/* UTILITIES
+------------------------------------------------------------------------------*/
+
+// Disable selection
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+// Clearfix
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
+  }
+}
+
+/* IE6 */
+* html .clearfix {
+  zoom: 1;
+}
+
+/* IE7 */
+*:first-child+html .clearfix {
+  zoom: 1;
+}
+
+// Absolute center
+.absolutely-centered {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  .translate2d(-50%, -50%);
+}

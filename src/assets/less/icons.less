@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'coms';
+  src:  url('../fonts/coms.eot');
+  src:  url('../fonts/coms.eot#iefix') format('embedded-opentype'),
+    url('../fonts/coms.ttf') format('truetype'),
+    url('../fonts/coms.woff') format('woff'),
+    url('../fonts/coms.svg#coms') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'coms' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-up {
+  &:before {
+    content: @icon-arrow-up;
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: @icon-arrow-right;
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: @icon-arrow-left;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: @icon-arrow-down;
+  }
+}
+.icon-chat {
+  &:before {
+    content: @icon-chat;
+  }
+}
+
