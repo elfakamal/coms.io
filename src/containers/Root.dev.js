@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Provider } from 'react-redux';
-import { Router, browserHistory } from 'react-router';
+import { Router, hashHistory } from 'react-router';
 
 import routes from '../routes';
 // import DevTools from './DevTools';
@@ -11,7 +11,7 @@ const Root = (props) => {
   return (
     <Provider store={store}>
       <div>
-        <Router history={browserHistory} routes={routes} />
+        <Router history={hashHistory} routes={routes} />
         {/* <DevTools /> */}
       </div>
     </Provider>
@@ -19,7 +19,7 @@ const Root = (props) => {
 };
 
 Root.propTypes = {
-  store: PropTypes.object.isRequired,
+  store: PropTypes.shape().isRequired,
 };
 
 export default Root;

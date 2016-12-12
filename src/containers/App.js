@@ -14,13 +14,13 @@ import {
     steps: state.steps,
     conversations: state.conversations,
     dispatch: state.dispatch,
-  })
+  }),
 )
 export default class App extends Component {
   static propTypes = {
     children: PropTypes.node,
-    conversations: PropTypes.array,
-    steps: PropTypes.array,
+    conversations: PropTypes.arrayOf(PropTypes.shape()),
+    steps: PropTypes.arrayOf(PropTypes.shape()),
     dispatch: PropTypes.func,
   };
 
@@ -46,7 +46,7 @@ export default class App extends Component {
 
     return (
       <section>
-        <div>Coms.io</div>
+        <h1>Coms.io</h1>
         {content}
         {children}
       </section>

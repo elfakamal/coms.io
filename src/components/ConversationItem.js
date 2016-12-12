@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 export default class ConversationItem extends React.Component {
   static propTypes = {
-    conversation: PropTypes.object.isRequired,
+    conversation: PropTypes.shape().isRequired,
   };
 
   constructor(props) {
@@ -18,9 +18,9 @@ export default class ConversationItem extends React.Component {
     const { uuid, title } = this.props.conversation;
 
     return (
-      <section className="coms-conversation">
-        <div><Link to={`#/conversations/${uuid}`}>{title}</Link></div>
-      </section>
+      <div className="coms-conversation-item">
+        <Link to={`/conversations/${uuid}`}>{title}</Link>
+      </div>
     );
   }
 }

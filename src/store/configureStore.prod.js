@@ -6,6 +6,6 @@ export default function configureStore(initialState) {
   return createStore(
     rootReducer,
     initialState,
-    applyMiddleware(promiseMiddleware)
+    applyMiddleware(promiseMiddleware),
   );
 }

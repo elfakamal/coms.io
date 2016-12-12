@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 @connect(
-  ({ user }) => ({ user })
+  ({ user }) => ({ user }),
 )
 export default class ConversationPage extends Component {
   static propTypes = {
-    conversation: PropTypes.object,
+    conversation: PropTypes.shape(),
   };
 
   constructor(props) {
@@ -22,6 +22,7 @@ export default class ConversationPage extends Component {
 
   loadMessages() {
     console.log('load messages');
+    console.log(this.state.selectedConversation);
   }
 
   render() {

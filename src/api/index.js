@@ -3,7 +3,6 @@ module.exports = function() {
       _ = require('lodash'),
       uuid = require('uuid');
 
-  var steps = require('./grid-week.json');
   var users = require('./users.json');
 
   var conversations = function(nbConversations, nbMessages) {
@@ -31,7 +30,6 @@ module.exports = function() {
   };
 
   return {
-    steps: steps,
     users: users,
     conversations: conversations(_.random(4, 7), _.random(4, 40))
   };

@@ -20,8 +20,8 @@ export default function configureStore(initialState) {
     initialState,
     compose(
       applyMiddleware(sagaMiddleware, promiseMiddleware, createLogger()),
-      DevTools.instrument()
-    )
+      DevTools.instrument(),
+    ),
   );
 
   sagaMiddleware.run(rootSaga);
